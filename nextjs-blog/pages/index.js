@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Ghomatech</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Darius Ghomashchian</title>
+        <link rel="icon" href="/logoMain.png" />
       </Head>
 
       <main>
