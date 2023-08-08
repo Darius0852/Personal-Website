@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className={styles.title}>
+        <h1 className={styles.title}> 
           Hi, I'm Darius
         </h1>
 
@@ -113,6 +113,7 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
+      
     </div>
   )
 }
