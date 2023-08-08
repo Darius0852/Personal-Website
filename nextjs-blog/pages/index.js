@@ -1,15 +1,26 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
+import { navLinks } from "../components/Navbar";
+import Link from "next/link";
+import Navbar from '../components/Navbar';
+
 export default function Home() {
   return (
+    
     <div className={styles.container}>
+      
       <Head>
         <title>Darius Ghomashchian</title>
         <link rel="icon" href="/logoMain.png" />
       </Head>
-
+      <div className={styles.navigation}>
+        <header>
+          <Navbar/>
+        </header>
+      </div>
       <main>
+      
         <h1 className={styles.title}> 
           Hi, I'm Darius
         </h1>
@@ -22,30 +33,30 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h3>Github &rarr;</h3>
+            <p>Find my latest open source project and contributions.</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h3>Blog &rarr;</h3>
+            <p>Check out my latest article on my personal blog.</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3>Novaroom &rarr;</h3>
+            <p>AI-powered SAAS solution to generate SEO-optimized blogs.</p>
           </a>
 
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Automated Blog &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Phluxr is a blog which I have fully automated with publishing bots.
             </p>
           </a>
         </div>
@@ -113,7 +124,7 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-      
+
     </div>
   )
 }
