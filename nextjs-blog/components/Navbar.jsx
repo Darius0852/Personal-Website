@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className={`nav`} style={}>
+      <nav className={`nav`}>
         <Link href={"/"}>
             <h1 className="logo">Darius Ghomashchian</h1>
         </Link>
